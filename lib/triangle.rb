@@ -15,7 +15,7 @@ class Triangle
     def kind
         # binding.pry
         # SIDES.sort!
-        if [@leftlength, @rightlength, @bottomlength].all? { |e|  e > 0}
+        if SIDES.all? { |e|  e > 0}
             if leftlength == rightlength && leftlength == bottomlength
                 :equilateral
             elsif (leftlength == rightlength && leftlength + rightlength > bottomlength) ||
